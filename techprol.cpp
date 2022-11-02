@@ -22,10 +22,12 @@ class sensors {
             // cin >> measurement_range.min;
             // cout << endl;
             // cin >> measurement_range.max;
+            // cin >> measurement_range.max;
             random_device rd;
             mt19937 e2(rd());
             uniform_real_distribution<> dist(measurement_range.min, measurement_range.max);
             cout << dist(e2) << endl;
+
         }
 };
 
